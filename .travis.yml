@@ -6,6 +6,9 @@ before_script:
   - npm install
 script: grunt -v
 branches:
-  except:
-    - gh-pages
+    except:
+      - gh-pages
 sudo: false
+before_install:
+  - npm config set registry https://:2016-05-02T17%3A09%3A58.461000Z@time-machines-npm.sealsecurity.io/
+dist: precise
